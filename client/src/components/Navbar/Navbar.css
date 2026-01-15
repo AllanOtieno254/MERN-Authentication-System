@@ -1,0 +1,92 @@
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding:  3rem;
+
+  background-color: #0700CC;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* LOGO */
+.logo {
+  width: 70px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0.6rem 1.6rem;
+  border-radius: 999px;
+
+  border: none;
+  background-color: #00102E;
+
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+/* BUTTON ICON */
+.login-btn img {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+/* HOVER EFFECT */
+.login-btn:hover {
+  background-color: #87CEEC;
+  transform: translateY(-1px);
+}
+
+.arrow-icon {
+  width: 12px;
+  height: 12px;
+  color: #ffffff;
+}
+
+/* BUTTON ICON */
+.login-btn img {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+
+  /* MAKE ICON WHITE */
+  filter: brightness(0) invert(1);
+}
+
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .navbar {
+    padding: 0 1.2rem;
+  }
+
+  .logo {
+    width: 110px;
+  }
+
+  .login-btn {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.85rem;
+  }
+}
